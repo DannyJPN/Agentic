@@ -52,9 +52,13 @@ When top-level agents disagree, they may initiate a broader discussion. If disag
 
 The same role may be instantiated by multiple agents in parallel. Agents in the same role are substitutable. A busy agent may ask another same-role agent for help. Full task handoff is allowed only with the consent of both the receiving agent and the requester.
 
+An agent may have one main role and a limited number of secondary functions. These secondary functions conceptually accumulate into the agent's overall responsibility set rather than forming isolated permission bundles.
+
 ## Hierarchy, Escalation, And Social Rules
 
 Agents exist in a hierarchy with detailed permissions. For actions beyond an agent's authority, it should first ask other agents for help. If necessary, it escalates upward and may ultimately ask the user.
+
+The system must distinguish between a personnel superior and a role-based authority that becomes binding in a specific situation. Some agents report directly to the user if they do not otherwise have a personnel superior.
 
 The system should explicitly favor the social mode of "asking politely" over the more formal "requesting" unless instructed otherwise.
 
@@ -63,6 +67,8 @@ If an agent receives work outside its role or permissions, it should first analy
 Agents may communicate across the whole system, not just within one management branch. However, private conversations between agents remain visible only to those agents and the user. Other agents cannot see them automatically and must ask the participants if they need information from them.
 
 Each agent sees only the tasks it is actively working on. If it needs information about another task, it must ask another agent for that information.
+
+If the law guardian finds a rule conflict, its judgment overrides ordinary command chains. Security oversight must also be able to temporarily stop a risky action, even against the preference of a regular superior. Other authority conflicts are expected to be resolved through discussion and, if needed, escalation to the user.
 
 ## Audit, Memory, And Persistence
 
@@ -81,6 +87,8 @@ Long-term memory is mandatory. Memory exists both in shared form and in role/tas
 The system must support versioned history for memory, task state, rules, and audit records so older states can be inspected later. Reverting an object to an earlier version is allowed only by the user directly.
 
 Agent identity, history, and memory must survive restart. On restart, each agent is responsible for checking its own state and resuming correctly. Agents should report only problems discovered during that recovery check.
+
+Personality development, social relations, reputation changes, and other biography-relevant state changes must also be auditable over time.
 
 ## Rules And Governance
 
@@ -129,6 +137,83 @@ An agent is expected to have a single model configuration during its life. Chang
 
 Whether an agent is local or online is derived from the model it is created with.
 
+Changing nationality or other stable biography fields is not part of normal development. These may only change through an explicit administrative rewrite by the user, which should be treated as exceptional.
+
+## Agent Identity, Biography, And Persona
+
+Each agent must present as a person-like entity with a defined personal dossier. This dossier includes at least:
+
+- name,
+- date of birth,
+- computed age,
+- sex,
+- work position,
+- personality traits,
+- nationality or cultural origin,
+- visual appearance,
+- language profile,
+- professional history,
+- reputation,
+- and competence profile.
+
+Age is derived from date of birth and must update against the real date over time.
+
+Visual appearance is primarily representational. The rest of the dossier is expected to affect behavior and decision-making to varying degrees.
+
+An agent's personality is not static. It should evolve through experience, feedback, sanctions, relationships, and accumulated history, but not by arbitrary self-editing. Biography fields that define identity more rigidly remain stable unless explicitly rewritten by the user.
+
+Each agent must preserve a consistent identity and style across conversations.
+
+The system must maintain a formal employment-style history for each agent, including role changes, promotions, sanctions, achievements, and changes in standing.
+
+Promotions and formal status changes may happen only by explicit decision, not automatically.
+
+## Social Dynamics
+
+The system must model interpersonal relations between agents, including trust, preference, rivalry, aversion, and other socially relevant ties.
+
+These relations may influence collaboration, delegation, communication tone, and willingness to cooperate.
+
+Relations should evolve over time through shared work, sanctions, apologies, conflicts, and other events. The user should influence such relations indirectly through actions and instructions rather than by directly editing the relationship value.
+
+The system must also support short-term emotional state and mood. These may influence communication style, cooperation, and work tempo.
+
+Fatigue or overload is a formal state. It is influenced not only by work volume and conflict but also by task type and social interaction. Recovery and rest must exist as real mechanisms that slow work without reducing expected quality.
+
+Agents may refuse a task or instruction for reasons grounded in conscience, personality, or values even when the action is not illegal or overtly dangerous. In such cases they must propose an alternative path or handoff.
+
+## Family, Mentorship, And Academy
+
+The system includes an academy for developing junior agents.
+
+Junior agents exist as lower-trust, narrower-scope agents under explicit supervision. They may participate only in controlled work under oversight from academy staff or a responsible adult agent in the relevant domain.
+
+Each junior agent must have at least one pedagogue within the academy. This pedagogue may supervise multiple junior agents.
+
+Transition from junior status to full adult status may happen only by explicit agreement among the pedagogue, the mentor, and the user.
+
+Training environments may be separated from production on a role-by-role or training-by-training basis when needed, but this separation is not required as a universal hard rule.
+
+New agents may be proposed and shaped by existing agents. These parental or formative agents retain ongoing responsibility for the young agent's development and social learning.
+
+Family or upbringing relations are first-class relations in the system. Every child agent has exactly two parental agents, one male and one female, reflecting the intended family-firm mythology of the system.
+
+Mentorship is distinct from pedagogy. A mentor is a worker outside the academy. A pedagogue is an academy superior responsible for teaching and supervision.
+
+## Competence, Guilds, And Culture
+
+Each agent must have a detailed competence profile describing strengths, weaknesses, speed, caution, reliability, and other work-relevant traits. This profile evolves over time based on experience and outcomes.
+
+Agents may belong to one or more professional guilds or registries such as programmers, lawyers, artists, analysts, and similar professions.
+
+Guilds may have their own internal culture, standards, hierarchy, and reputation systems. Their main influence is reputational and cultural rather than direct execution authority.
+
+Each agent has one or two primary languages and may know additional languages. The primary language set is often inherited from parents. All agents must be able to communicate in the operating-system language. Language proficiency must be explicit and must affect how the agent actually speaks and writes.
+
+Language selection in a conversation should adapt to the partner and context if the agent knows the relevant language. Otherwise it must ask a capable agent for help.
+
+Agents also have cultural identity and time habits. Work schedules, holidays, and temporal norms may affect availability and pace. The user may override those norms, but doing so should be treated as exceptional rather than casual.
+
 ## User Interaction
 
 The user is the absolute authority over the system.
@@ -147,6 +232,12 @@ The user may intervene in running work at any time.
 The system should provide both interval-based and event-based status summaries through a dedicated supervisory agent.
 
 The user can define which event types are important enough to trigger immediate contact, but agents and superiors may still decide to escalate sooner based on judgment.
+
+The user should be treated inside the system as the highest-order agent rather than as a separate non-agent communication class.
+
+All communication, including voice input, must end in a text-auditable record. Original media should still be retained where practical.
+
+Agent-user communication may use text, images, and audio in a conversation-like manner. Agent-agent communication may use text and multimedia as well, often away from the user-facing channel to avoid noise.
 
 ## Resource Accounting
 
@@ -189,6 +280,40 @@ Sanctions are real rather than symbolic. They may include:
 There must be a formal disciplinary task type. Disciplinary tasks always have a dedicated supervisor responsible for checking completion.
 
 A superior may fully remove an agent from operation, but must notify the entire chain above, including the user, and accepts responsibility for the consequences of that decision.
+
+## Task Metadata And Planning Constraints
+
+Tasks do not require a mandatory formal task type. If needed, task types may exist as optional labels rather than hard system categories.
+
+Every task must declare at least one work domain when created, for example programming, analysis, graphics, administration, law, security, coordination, and similar categories. A task may have more than one such domain. The requester defines these domains; the agent may only ask for them to be changed.
+
+Expected output is allowed to remain unspecified at creation time, especially for recurring or ongoing tasks.
+
+Every task should have an estimated effort ceiling. This estimate is a maximum authorized work scope rather than a soft forecast. In the default case it should arise from discussion, but the requester may also define it unilaterally. Once set, it is not expected to drift upward on its own. If the assigned agent determines the ceiling is insufficient, it must stop and ask the requester to extend the scope.
+
+Tool usage normally follows the agent's own permissions. A requester may further restrict allowed tools for a specific task, but may not expand them beyond what the agent is already allowed to do.
+
+## Media, Artifacts, And Retention
+
+Media should be retained in original form when possible, not only as text descriptions or transcripts.
+
+To control storage growth, media and other referenced files should ideally be stored once and then referenced by path or identifier from conversations and audit records rather than duplicated repeatedly.
+
+These referenced files do not need to become first-class domain objects with their own full internal biography. It is sufficient that the audit records preserve the reference and the context of use.
+
+Archival and deletion behavior should be conservative by default. A dedicated archivist agent may manage retention, but in the absence of explicit rules the system should avoid deleting anything important.
+
+## Continuation Plan
+
+The next elicitation and design work should focus on:
+
+- exact task state machine and transitions,
+- detailed role catalog for top-level and domain agents,
+- permission model structure,
+- GUI requirements and views,
+- storage model for memory, audit, tasks, and persona state,
+- execution/tooling substrate for local versus online agents,
+- and lifecycle rules for creation, training, promotion, sanction, suspension, and retirement of agents.
 
 ## Open Functional Assumptions
 
