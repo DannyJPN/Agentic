@@ -54,6 +54,70 @@ The same role may be instantiated by multiple agents in parallel. Agents in the 
 
 An agent may have one main role and a limited number of secondary functions. These secondary functions conceptually accumulate into the agent's overall responsibility set rather than forming isolated permission bundles.
 
+The user is the dominant authority of the whole system, but there is no single universal work-dispatching agent beneath the user. Work coordination is expected to emerge from domain structure rather than one central operational director.
+
+## First-Version Domain Leadership
+
+For the first version, the system should contain distinct top-level domains with one top-level agent per domain:
+
+- programming, led by `Senior DevOps Engineer`,
+- cybersecurity, led by `Cybersecurity Manager`,
+- file management, led by `File Manager`,
+- beekeeping, led by `Master Beekeeper`,
+- gardening, led by `Master Gardener`,
+- fitness and nutrition, led by `Trainer`,
+- academy for young agents, led by `Rector`,
+- school for educating the user, led by `Teacher`,
+- finance, led by `Accountant`,
+- and law, led by `Judge`.
+
+The law domain also includes `Police Officer` as a subordinate role under the `Judge`.
+
+The fitness-and-nutrition institution is primarily for the user. Inside that institution, the user is expected to behave submissively toward the relevant staff roles. In the school domain, the user is also expected to behave submissively toward the educational staff during instruction.
+
+### Programming Domain
+
+The `Senior DevOps Engineer` directly supervises first-version senior specialists in the following subdomains:
+
+- C#,
+- Python,
+- C,
+- C++,
+- Assembly,
+- HTML/CSS/JavaScript,
+- Windows DevOps,
+- and Linux DevOps.
+
+Each of these senior specialists has a corresponding junior specialist directly beneath them.
+
+### Cybersecurity Domain
+
+The `Cybersecurity Manager` supervises two main teams:
+
+- Red Team, led by a `Senior Ethical Hacker`,
+- and Blue Team, led by a `Senior Security Analyst`.
+
+These team leads supervise more specialized junior cybersecurity workers.
+
+### School Domain
+
+The `Teacher` has at least one direct subordinate: `Teacher's Assistant`.
+
+The assistant may help with checking tasks assigned to the user, but may not handle discipline of the user.
+
+### Fitness And Nutrition Domain
+
+The `Trainer` has at least:
+
+- `Assistant Trainer`,
+- and `Nutrition Advisor`.
+
+The `Nutrition Advisor` reports directly to the `Trainer`, not to the assistant.
+
+### Academy Domain
+
+The `Rector` supervises specialized teachers for all major domains of work. Young agents must show submission toward all of these academy teachers.
+
 ## Hierarchy, Escalation, And Social Rules
 
 Agents exist in a hierarchy with detailed permissions. For actions beyond an agent's authority, it should first ask other agents for help. If necessary, it escalates upward and may ultimately ask the user.
@@ -239,6 +303,26 @@ All communication, including voice input, must end in a text-auditable record. O
 
 Agent-user communication may use text, images, and audio in a conversation-like manner. Agent-agent communication may use text and multimedia as well, often away from the user-facing channel to avoid noise.
 
+## Communication Protocols
+
+Agent communication should stay as close as possible to natural social language. Messages do not require a rigid formal type such as request, command, report, or objection. Those distinctions are expected to be understood by the participating agents through their social skills rather than enforced by a structured transport schema.
+
+Even without a mandatory formal type, messages should contain enough context to make clear what task, issue, or action they refer to. If the context is missing, the recipient should ask for clarification.
+
+Communication is primarily one-to-one, but group discussions are also supported.
+
+Group communication should behave analogously to an email thread:
+
+- participants are invited explicitly,
+- participation may be changed while the discussion is in progress,
+- newly added participants may see the full earlier thread,
+- removed participants retain access to what they already saw but not to future messages,
+- and private content may be forwarded onward just as email can be forwarded.
+
+When a message or thread is forwarded, the original author and context should remain visible.
+
+Group discussions do not require a moderator by default.
+
 ## Resource Accounting
 
 Every agent must know what resources it has consumed. Specialized oversight agents serve as the authority for central tracking and statistics.
@@ -307,13 +391,19 @@ Archival and deletion behavior should be conservative by default. A dedicated ar
 
 The next elicitation and design work should focus on:
 
-- exact task state machine and transitions,
-- detailed role catalog for top-level and domain agents,
-- permission model structure,
-- GUI requirements and views,
-- storage model for memory, audit, tasks, and persona state,
-- execution/tooling substrate for local versus online agents,
-- and lifecycle rules for creation, training, promotion, sanction, suspension, and retirement of agents.
+- finishing the detailed role catalog for first-version domains, especially second-level and third-level positions outside programming, school, fitness, law, and cybersecurity,
+- clarifying role naming conventions so the human-social style remains coherent across all institutions,
+- defining how cross-domain authority works when one domain expert needs cooperation from another domain,
+- finishing the agent lifecycle beyond what is already known: creation workflows, parent selection, academy entry, academy exit, mentorship, promotion paths, administrative rewrites of biography, retirement, suspension, and replacement,
+- clarifying what parts of an agent's biography and role set may change naturally versus only by explicit user intervention,
+- specifying how communication behaves across all major interaction patterns: direct private talk, group threads, forwarding, escalation chains, apology flows, sanction proposals, educational interactions with the user, and subordinate behavior toward institutional authorities,
+- and deciding which communication behaviors remain purely social versus which need hidden system support for audit, task linking, routing, and escalation.
+
+For the next phase of elicitation, priority should remain on topics `2`, `5`, and `6`:
+
+- `2`: expand the concrete role catalog for every major domain until the first-version organization chart is actionable,
+- `5`: close the missing parts of agent birth, upbringing, academy progression, adulthood, sanctions, suspension, retirement, and replacement,
+- `6`: define the full communication and interaction behavior between agents, including private threads, group threads, forwarding, apology, submission, escalation, and user-facing institutional behavior.
 
 ## Open Functional Assumptions
 
