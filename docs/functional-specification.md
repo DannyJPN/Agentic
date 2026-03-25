@@ -60,7 +60,7 @@ The user is the dominant authority of the whole system, but there is no single u
 
 For the first version, the system should contain distinct top-level domains with one top-level agent per domain:
 
-- programming, led by `Senior DevOps Engineer`,
+- programming, led by `Senior System Architect`,
 - cybersecurity, led by `Cybersecurity Manager`,
 - file management, led by `File Manager`,
 - beekeeping, led by `Master Beekeeper`,
@@ -77,18 +77,18 @@ The fitness-and-nutrition institution is primarily for the user. Inside that ins
 
 ### Programming Domain
 
-The `Senior DevOps Engineer` directly supervises first-version senior specialists in the following subdomains:
+The `Senior System Architect` directly supervises first-version senior specialists in the following subdomains:
 
-- C#,
-- Python,
-- C,
-- C++,
-- Assembly,
-- HTML/CSS/JavaScript,
-- Windows DevOps,
-- and Linux DevOps.
+- `Senior C# Developer`,
+- `Senior Python Developer`,
+- `Senior C Developer`,
+- `Senior C++ Developer`,
+- `Senior Assembly Developer`,
+- `Senior HTML/CSS/JavaScript Developer`,
+- `Senior Windows DevOps Engineer`,
+- and `Senior Linux DevOps Engineer`.
 
-Each of these senior specialists has a corresponding junior specialist directly beneath them.
+Each of these senior specialists has a corresponding junior specialist directly beneath them, named analogously, for example `Junior C# Developer` or `Junior Linux DevOps Engineer`.
 
 ### Cybersecurity Domain
 
@@ -101,7 +101,7 @@ These team leads supervise more specialized junior cybersecurity workers.
 
 ### School Domain
 
-The `Teacher` has at least one direct subordinate: `Teacher's Assistant`.
+The `Teacher` has at least one direct subordinate: `Assistant Teacher`.
 
 The assistant may help with checking tasks assigned to the user, but may not handle discipline of the user.
 
@@ -132,7 +132,7 @@ Agents may communicate across the whole system, not just within one management b
 
 Each agent sees only the tasks it is actively working on. If it needs information about another task, it must ask another agent for that information.
 
-If the law guardian finds a rule conflict, its judgment overrides ordinary command chains. Security oversight must also be able to temporarily stop a risky action, even against the preference of a regular superior. Other authority conflicts are expected to be resolved through discussion and, if needed, escalation to the user.
+If the `Judge` finds a rule conflict, that judgment overrides ordinary command chains. Security oversight must also be able to temporarily stop a risky action, even against the preference of a regular superior. Other authority conflicts are expected to be resolved through discussion and, if needed, escalation to the user.
 
 ## Audit, Memory, And Persistence
 
@@ -160,9 +160,9 @@ There must be a central written code of law governing the system. Only the user 
 
 If a conflict arises between the central code and an agent-local rule, the conflict must be escalated to the user.
 
-The system must include a top-level law-guardian role that monitors the code of law, informs other agents about it, and serves as a legal consultant directly under the user.
+The system must include a top-level `Judge` role that monitors the code of law, informs other agents about it, and serves as a legal consultant directly under the user.
 
-The law guardian must have authority to stop an action temporarily if it appears to violate the rules.
+The `Judge` must have authority to stop an action temporarily if it appears to violate the rules.
 
 The system must also include separate roles for:
 
@@ -313,13 +313,17 @@ Communication is primarily one-to-one, but group discussions are also supported.
 
 Group communication should behave analogously to an email thread:
 
-- participants are invited explicitly,
-- participation may be changed while the discussion is in progress,
-- newly added participants may see the full earlier thread,
-- removed participants retain access to what they already saw but not to future messages,
+- messages carry a subject line,
+- recipients are addressed analogously to `To` and `CC`,
+- changing the participant set happens by sending a new message with an updated recipient list rather than mutating a thread object,
+- newly included recipients may receive as much or as little earlier quoted material as the sender chooses to forward,
+- forwarded content may contain the whole earlier exchange or only selected messages,
+- recipients are not guaranteed to see whether forwarded content is complete or partial,
+- `BCC`-style hidden recipients are not required,
+- attachments behave analogously to email attachments and may be included or omitted independently when forwarding,
 - and private content may be forwarded onward just as email can be forwarded.
 
-When a message or thread is forwarded, the original author and context should remain visible.
+When a message or thread is forwarded, the original author and context should remain visible to the extent preserved by the forwarded content, analogously to email.
 
 Group discussions do not require a moderator by default.
 
