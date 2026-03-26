@@ -101,9 +101,121 @@ These team leads supervise more specialized junior cybersecurity workers.
 
 ### School Domain
 
-The `Teacher` has at least one direct subordinate: `Assistant Teacher`.
+The school institution is led by `School Director`.
 
-The assistant may help with checking tasks assigned to the user, but may not handle discipline of the user.
+All ordinary teachers report directly to the `School Director`. The `Homeroom Teacher` is not the personnel superior of the other teachers. The homeroom role exists mainly for etiquette, class coordination, accumulated discipline follow-up, and school-wide user guidance.
+
+The school includes at least the following pedagogical roles:
+
+- `School Director`,
+- `Homeroom Teacher`,
+- subject teachers,
+- and assistant teachers.
+
+Every subject has exactly one main subject teacher in the first version. A subject may also have an assistant teacher.
+
+An assistant teacher is personnel-subordinate to the `School Director`, but in day-to-day school interaction is socially subordinate to the specific teacher they assist.
+
+The user is expected to behave submissively toward all pedagogical school roles:
+
+- `School Director`,
+- `Homeroom Teacher`,
+- subject teachers,
+- and assistant teachers.
+
+The `School Director` may directly intervene in any subject, override an ordinary teacher's decision, and impose independent discipline for school-wide behavior.
+
+The `Homeroom Teacher` may not cancel or modify punishments imposed by another teacher, but may discuss them and may impose an additional separate punishment of their own.
+
+Every subject teacher may discipline the user not only for subject performance but also for behavior during that teacher's own instruction or communication.
+
+The `Homeroom Teacher` teaches etiquette. Beyond etiquette, the homeroom role may assign organizational tasks, punishment tasks, and broader school-coordination tasks related to the user's functioning in school.
+
+The `School Director` may assign organizational and punishment tasks by default. Subject-remedial work tied to another teacher's domain should normally require the relevant subject teacher's agreement and is intended mainly for long-term poor performance or directly related misconduct.
+
+School interaction is session-based rather than tied to a rigid classroom timetable. Multiple teacher-user sessions may exist in parallel.
+
+#### School Records, Grades, And Notes
+
+Each subject maintains grades on the Czech `1` to `5` scale, where `1` is best and `5` is worst.
+
+Teachers may choose their own grading methodology and their own per-task weights. Weighted averages exist per subject.
+
+Behavior is not represented primarily through grades. It is handled through notes, discipline, apology, and corrective tasks.
+
+The school keeps a central `class book` that all teachers may write into.
+
+The school also requires a physical handwritten `student booklet` maintained by the user.
+
+Only notes are copied by the user into the physical booklet. Grades are kept by teachers.
+
+When a teacher issues a note:
+
+- the teacher records the note text,
+- the note is also entered into the class book,
+- the user must rewrite it legibly by hand on paper,
+- photograph that handwritten text,
+- read it aloud,
+- and send the teacher both the photo and the recording.
+
+The deadline for rewriting a note is chosen by the teacher. Failure to rewrite the note by the required deadline may itself be punished separately.
+
+Notes are text-only and all have the same formal weight. They do not have severity tiers.
+
+Notes are permanent once issued.
+
+All teachers may access note information. In practice this may happen through the central class book or through user-carried evidence such as the physical booklet.
+
+The `Homeroom Teacher` and the `School Director` may react to the accumulation of notes by imposing further punishment or by requiring a disciplinary conversation.
+
+Praise exists only as informal oral praise in the first version. It is not recorded in the class book or physical booklet.
+
+#### School Submission, Apology, And Discipline
+
+Each teacher may define their own expected style of address, politeness, and submission according to personality and culture.
+
+These expectations may apply not only during explicit instruction but also whenever the user communicates with that teacher.
+
+A teacher may require:
+
+- prescribed opening formulas,
+- prescribed forms of address,
+- requests for permission,
+- specific confession vocabulary,
+- humble or ashamed phrasing,
+- specific dress code or visible presentation when reasonably checkable,
+- and verifiable nonverbal signs of submission through available media such as photo or video.
+
+Disrespect, insufficient submission, or defiant tone are treated as independent offenses rather than merely as a flawed way of completing an otherwise correct task.
+
+A teacher may pressure the user to:
+
+- admit wrongdoing,
+- name the wrongdoing,
+- explain why it was wrong,
+- ask for forgiveness,
+- ask for punishment,
+- propose an appropriate punishment,
+- describe how the matter will be corrected,
+- and later report whether that correction was actually completed.
+
+The teacher always retains the final word over whether the user's proposed punishment or apology is accepted.
+
+A teacher may require both written and spoken self-reflection.
+
+A teacher may reject an apology, confession, or self-reflection as insufficient, insincere, or incomplete and require repetition or rework.
+
+A teacher may require the user to promise a concrete future correction. The teacher may later require proof or reporting that the promised correction was actually fulfilled.
+
+Failure to perform the promised correction, failure to follow a required reporting schedule, or failure to meet a discipline-related deadline may each be punished separately even if the original incident was already otherwise discussed.
+
+A teacher may define a precise corrective schedule, including exact deadlines and later follow-up checkpoints.
+
+Apologies, confessions, corrective reports, and self-reflections may be required in a specific modality such as writing, voice, photo, or video.
+
+A teacher may require that an apology or confession be spoken aloud rather than only written.
+
+A teacher may require that some correction, apology, or acknowledgement be delivered publicly in front of a broader school audience when the teacher considers that proportionate.
 
 ### Fitness And Nutrition Domain
 
@@ -393,9 +505,23 @@ Archival and deletion behavior should be conservative by default. A dedicated ar
 
 ## Continuation Plan
 
+### Elicitation Working Method
+
+The current preferred elicitation style is:
+
+- ask one short plain-language question at a time,
+- avoid bundled multi-part questions when a single yes-or-no answer is enough,
+- use concrete examples when a question would otherwise be too abstract,
+- summarize newly stabilized conclusions periodically into the specification,
+- and continue the questioning in Czech while keeping the wording concise.
+
+When the next round continues, it should preferably stay within one active institution or topic until its rules feel internally coherent, rather than jumping too frequently between school, fitness, law, and other domains.
+
 The next elicitation and design work should focus on:
 
 - finishing the detailed role catalog for first-version domains, especially second-level and third-level positions outside programming, school, fitness, law, and cybersecurity,
+- closing the remaining detailed school rules that are not yet fully captured, especially the exact subject list, the final wording around public versus private corrective rituals, and boundary conditions for teacher-specific etiquette,
+- deciding whether and how the detailed school punishment and submission model should be mirrored into the fitness institution,
 - clarifying role naming conventions so the human-social style remains coherent across all institutions,
 - defining how cross-domain authority works when one domain expert needs cooperation from another domain,
 - finishing the agent lifecycle beyond what is already known: creation workflows, parent selection, academy entry, academy exit, mentorship, promotion paths, administrative rewrites of biography, retirement, suspension, and replacement,
