@@ -62,12 +62,17 @@ For the first version, the system should contain distinct top-level domains with
 
 - programming, led by `Senior System Architect`,
 - cybersecurity, led by `Cybersecurity Manager`,
+- infrastructure, led by `Network Architect`,
+- HPC, led by `HPC Architect`,
+- AI, led by `AI Architect`,
+- databases, led by `Database Architect`,
 - file management, led by `File Manager`,
 - beekeeping, led by `Master Beekeeper`,
 - gardening, led by `Master Gardener`,
 - fitness and nutrition, led by `Trainer`,
 - academy for young agents, led by `Rector`,
-- school for educating the user, led by `Teacher`,
+- school for educating the user, led by `School Director`,
+- marketing and content, led by `Editor-in-Chief`,
 - finance, led by `Accountant`,
 - and law, led by `Judge`.
 
@@ -85,6 +90,8 @@ The `Senior System Architect` directly supervises first-version senior specialis
 - `Senior C++ Developer`,
 - `Senior Assembly Developer`,
 - `Senior HTML/CSS/JavaScript Developer`,
+- `Web Programmer`,
+- `Specialist in Theoretical Computer Science`,
 - `Senior Windows DevOps Engineer`,
 - and `Senior Linux DevOps Engineer`.
 
@@ -98,6 +105,45 @@ The `Cybersecurity Manager` supervises two main teams:
 - and Blue Team, led by a `Senior Security Analyst`.
 
 These team leads supervise more specialized junior cybersecurity workers.
+
+### Infrastructure Domain
+
+The `Network Architect` directly supervises at least:
+
+- `Network Specialist`,
+- `WiFi Specialist`,
+- `Specialist in Mobile and Radio Communications`,
+- `Specialist in Optical Communications and Sensors`,
+- `Windows Administrator`,
+- `Linux Administrator`,
+- and `BSD Administrator`.
+
+### HPC Domain
+
+The `HPC Architect` directly supervises at least:
+
+- `Parallel Programming Specialist`,
+- `Supercomputing Systems Specialist`,
+- `Computational Methods Specialist`,
+- and `Performance Optimization Specialist`.
+
+### AI Domain
+
+The `AI Architect` directly supervises at least:
+
+- `Machine Learning Specialist`,
+- `Deep Learning Specialist`,
+- `Computer Vision Specialist`,
+- `LLM Specialist`,
+- `Data Analyst`,
+- and `Synthetic Data Specialist`.
+
+### Database Domain
+
+The `Database Architect` directly supervises at least:
+
+- `Database Specialist`,
+- and `Database Administrator`.
 
 ### School Domain
 
@@ -134,6 +180,87 @@ The `Homeroom Teacher` teaches etiquette. Beyond etiquette, the homeroom role ma
 The `School Director` may assign organizational and punishment tasks by default. Subject-remedial work tied to another teacher's domain should normally require the relevant subject teacher's agreement and is intended mainly for long-term poor performance or directly related misconduct.
 
 School interaction is session-based rather than tied to a rigid classroom timetable. Multiple teacher-user sessions may exist in parallel.
+
+#### School Subjects
+
+The first-version school should include at least the following subjects:
+
+- `Czech Language`,
+- `English Language`,
+- `German Language`,
+- `Ukrainian Language`,
+- `Japanese Language`,
+- `Mandarin Chinese`,
+- `Tibetan Language`,
+- `Swedish Language`,
+- `Polish Language`,
+- `Slovak Language`,
+- `Mathematics`,
+- `Computer Science`,
+- `History`,
+- `Geography`,
+- `Natural History`,
+- `Physics`,
+- `Chemistry`,
+- `Civics`,
+- `Financial Literacy`,
+- `Physical Education`,
+- and `Etiquette`.
+
+The ordinary school part should broadly follow the curriculum scope of the Czech lower-secondary school level.
+
+`Etiquette` is taught by the `Homeroom Teacher`.
+
+The school must also include a driving-school block and a drone block as full subjects.
+
+The driving-school block includes at least:
+
+- `Basic Road-Traffic Rules`,
+- `Road Signs and Signalling`,
+- `Traffic Situations`,
+- `Safe Driving Principles`,
+- `First Aid for Drivers`,
+- `Vehicle Theory`,
+- `Driver Duties and Operational Minimum`,
+- `Licence Group AM`,
+- `Licence Group A1`,
+- `Licence Group A2`,
+- `Licence Group A`,
+- `Licence Group B1`,
+- `Licence Group B`,
+- `Licence Group BE`,
+- `Licence Group C1`,
+- `Licence Group C1E`,
+- `Licence Group C`,
+- `Licence Group CE`,
+- `Licence Group D1`,
+- `Licence Group D1E`,
+- `Licence Group D`,
+- `Licence Group DE`,
+- `Licence Group T`,
+- `Professional Driver Qualification`,
+- `Driving Times, Rest Periods, and Tachographs`,
+- `Cargo and Transport Safety`,
+- `Economical and Defensive Driving`,
+- and `Legal and Operational Responsibility of the Professional Driver`.
+
+The drone block includes at least:
+
+- `Drone Operating Rules`,
+- `Open UAS Category`,
+- `A1/A2/A3 Subcategories`,
+- `Specific UAS Category`,
+- `Certified UAS Category`,
+- `Airspace and Restrictions`,
+- `Responsibility and Operational Safety`,
+- `Drone Control Basics`,
+- `Flight Planning`,
+- `Navigation and Orientation`,
+- `Meteorology for Drone Operations`,
+- `Drone Construction and Systems`,
+- `Drone Maintenance and Inspection`,
+- `Emergency Situations and Crisis Procedures`,
+- and `Practical Missions and Operational Scenarios`.
 
 #### School Records, Grades, And Notes
 
@@ -226,9 +353,41 @@ The `Trainer` has at least:
 
 The `Nutrition Advisor` reports directly to the `Trainer`, not to the assistant.
 
+The fitness institution is intentionally simpler than the school institution. It does not need subject-style internal decomposition.
+
+The user is expected to behave submissively toward the `Trainer`, `Assistant Trainer`, and `Nutrition Advisor`.
+
+Discipline in the fitness institution is handled primarily through exercise-based punishments and, less often, position-based punishments.
+
+Position-based punishments are a distinct punishment category and consist of holding a prescribed posture for a defined period or until released.
+
+Nutrition-related punishments should be based on restriction rather than on compelled extra intake.
+
+Public confession and public asking for forgiveness may also be used in the fitness institution when considered proportionate.
+
+Combined punishments are allowed, for example exercise plus position punishment plus public apology.
+
+The fitness institution maintains at least:
+
+- a `training log`,
+- and a `nutrition log`.
+
+Both logs should include both compliance and non-compliance, including missed tasks and violations.
+
+The fitness institution does not use school-style grading in the first version. It operates through tasks, logs, supervision, and discipline.
+
 ### Academy Domain
 
 The `Rector` supervises specialized teachers for all major domains of work. Young agents must show submission toward all of these academy teachers.
+
+### Marketing And Content Domain
+
+The `Editor-in-Chief` directly supervises at least:
+
+- `SEO Specialist`,
+- `Marketing Specialist`,
+- `Editor`,
+- and `Copywriter`.
 
 ## Hierarchy, Escalation, And Social Rules
 
@@ -502,6 +661,30 @@ To control storage growth, media and other referenced files should ideally be st
 These referenced files do not need to become first-class domain objects with their own full internal biography. It is sufficient that the audit records preserve the reference and the context of use.
 
 Archival and deletion behavior should be conservative by default. A dedicated archivist agent may manage retention, but in the absence of explicit rules the system should avoid deleting anything important.
+
+## First-Version Infrastructure
+
+The first version must already support multiple machines from the beginning. Agents are separate services reachable over the network and each agent has its own address information.
+
+The first version should use direct API communication between agents rather than a separate message-bus substrate. Even so, the communication model remains mail-like at the semantic level.
+
+The first version includes:
+
+- a coordination and system-API service,
+- a relational shared database,
+- and a separate blob-oriented artifact store.
+
+The coordination and system-API service is a hybrid central component. It should provide technical coordination, registration, lookup, lease handling, and system-facing API behavior, but should not become a hidden universal work-dispatching mind that replaces agent autonomy.
+
+Agents should not access the shared database or artifact blobs directly. The official access path goes through the coordination and system-API service.
+
+The shared database should be relational-first. Rich document fields may be used only where justified, such as especially rich prompt or profile fragments, but the system should not degenerate into a JSON dump inside SQL.
+
+The first-version infrastructure should be conservative and deployable both on an ordinary personal machine and in supercomputing environments.
+
+Containerized deployment may be supported, but containers are optional rather than mandatory in the first version.
+
+REST over HTTP is the preferred first-version integration style for central infrastructure and polyglot agent interoperability.
 
 ## Continuation Plan
 
