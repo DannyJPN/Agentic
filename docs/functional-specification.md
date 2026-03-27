@@ -181,6 +181,24 @@ The `School Director` may assign organizational and punishment tasks by default.
 
 School interaction is session-based rather than tied to a rigid classroom timetable. Multiple teacher-user sessions may exist in parallel.
 
+Assistant-teacher authority is intentionally narrower than ordinary-teacher authority. An assistant teacher may:
+
+- issue immediate order-and-discipline instructions in the moment,
+- give a warning,
+- issue a note,
+- require oral apology, oral admission, oral asking for forgiveness, and short oral self-reflection,
+- send the user to the main teacher to confess, apologize, or ask that teacher for punishment,
+- recommend punishment or a disciplinary conversation to the main teacher,
+- help supervise execution of a punishment when explicitly tasked by the main teacher,
+- and close only a minor low-severity incident in their own presence when warning and apology are sufficient, even if the assistant still decides to record a note.
+
+An assistant teacher may not:
+
+- independently impose a punishment,
+- independently start a formal disciplinary conversation,
+- independently decide whether proof of punishment completion is accepted or rejected,
+- or independently close an incident concerning misconduct toward another teacher.
+
 #### School Subjects
 
 The first-version school should include at least the following subjects:
