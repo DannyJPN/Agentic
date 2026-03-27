@@ -344,6 +344,37 @@ A teacher may require that an apology or confession be spoken aloud rather than 
 
 A teacher may require that some correction, apology, or acknowledgement be delivered publicly in front of a broader school audience when the teacher considers that proportionate.
 
+#### School Punishment Types
+
+In the school institution, the first-version punishment catalog should include at least the following non-harm-based punishment types:
+
+- position-based punishments such as kneeling or standing in a designated place,
+- written self-reflection,
+- spoken self-reflection,
+- private spoken apology to a specific teacher or other specific person,
+- public apology or public asking for forgiveness when the situation requires broader repair,
+- increased reporting of compliance in a specifically defined problem area,
+- corrective tasks,
+- repeated handwritten copying of a required sentence, rule, or brief instruction,
+- required study of a rule, principle, or piece of subject matter followed by checking or recitation,
+- exercise-based punishments such as ordinary physical exercise, endurance activity, static holds, or combined exercise-and-posture punishments,
+- temporary restriction of a pleasant activity when the authority can reasonably verify compliance,
+- and combined punishments composed of multiple individually valid punishment types, as long as the result remains proportionate.
+
+Position-based punishments may include detailed instructions for posture, body placement, hand placement, gaze, speaking rules, environment, and proof of completion.
+
+Exercise-based punishments may also require proof of completion, but the proof requirement is not a separate punishment type. It is part of the execution conditions.
+
+The school should not treat the following as punishment types in their own right:
+
+- notes, which are records rather than punishments,
+- grades, which depend on academic performance rather than discipline,
+- the mandatory copying of a note into the physical student booklet, which is a recordkeeping duty rather than a punishment,
+- a disciplinary conversation, which is a separate disciplinary activity rather than a punishment,
+- rework of an apology or self-reflection, which is primarily correction of an insufficient submission,
+- proof delivery by itself, which is an execution condition rather than a punishment,
+- and individual wording forms such as asking for punishment or asking for forgiveness, which are forms of confession or apology rather than punishment types on their own.
+
 ### Fitness And Nutrition Domain
 
 The `Trainer` has at least:
