@@ -393,6 +393,68 @@ The school should not treat the following as punishment types in their own right
 - proof delivery by itself, which is an execution condition rather than a punishment,
 - and individual wording forms such as asking for punishment or asking for forgiveness, which are forms of confession or apology rather than punishment types on their own.
 
+#### School Punishment Boundaries And Proportionality
+
+Every school punishment must be proportionate to the seriousness of the proven misconduct.
+
+Every punishment must also be practically executable in the user's real circumstances. A teacher must not impose a punishment that the user objectively cannot perform.
+
+Before imposing an unusual punishment or proof requirement, the teacher should verify that the user has the necessary conditions, space, tools, or media options to comply.
+
+If the originally intended punishment form turns out not to be executable, the teacher should preserve the seriousness of the response but choose another realistically executable form rather than simply abandoning discipline.
+
+Punishments must not be based on arbitrary whim or on conditions unrelated to the misconduct or its correction. However, both misconduct-linked punishments and more universal punishment forms are allowed as long as they remain proportionate and do not violate higher rules.
+
+Repeated misconduct, deliberate misconduct, lying, evasion, or manipulation are aggravating factors. Early confession, truthful cooperation, clear remorse, active correction, direct asking for punishment, and stronger-than-required proof are mitigating factors.
+
+The proportionality judgment should take into account not only the act itself, but also the delinquent's later attitude:
+
+- whether the person confessed or denied,
+- whether the person spoke truthfully,
+- whether the person cooperated,
+- whether the person asked for forgiveness or punishment,
+- whether the person tried to evade consequences,
+- and whether the person attempted genuine correction.
+
+The proportionality judgment may also take into account the type of offense, including whether it primarily involved disrespect, disobedience, neglect of duty, lying, or another form of wrongdoing.
+
+The teacher may consider how public the misconduct was. A more public offense may justify a more public form of correction. However, even a private offense may be handled publicly if the authority decides that the educational purpose justifies it.
+
+Publicity is itself part of punishment severity and should be chosen deliberately. Public punishment must still remain proportionate and must not become humiliating in a purely self-serving way.
+
+If punishment execution was in fact made harsher by outside circumstances, including social embarrassment before real witnesses outside the system, the authority may take that into account when considering any further additional punishment. This does not retroactively change the punishment already carried out.
+
+Punishment conditions should be made clear enough in advance that the user can understand what must be done. A punishment must be concrete enough that its performance can be recognized and later evaluated.
+
+The punishment does not always need a fixed duration known in advance. Open-ended punishments tied to later release by the authority are allowed, but the required conduct during the punishment must still be clear.
+
+The teacher must not prolong or intensify a punishment merely out of mood, personal irritation, or arbitrary dissatisfaction. If conditions are changed during execution, there should be a reason connected to discipline, fairness, practicality, or execution quality.
+
+If the user reaches an objective physical limit during punishment, the user must truthfully explain the limitation and humbly beg for relief. The authority must then take that into account and may recognize the properly completed part and determine a different executable continuation.
+
+Feigning inability or strategically pretending that punishment is impossible is itself a separate offense. In that case the punishment may restart from the beginning and an additional punishment may be imposed.
+
+The teacher must not require proof that the user objectively cannot provide. If the originally ordered proof medium is unavailable, the teacher should set another reasonably credible way of proving completion.
+
+The punished person may always provide stronger proof than what was originally required. The authority may accept such stronger proof, and doing so may count as a mitigating sign of seriousness and remorse.
+
+By contrast, intentional attempts to prove completion in the weakest possible way may be treated as an aggravating factor.
+
+Voluntary penance is recognized across the system. It is not the same thing as a formally imposed punishment.
+
+Voluntary penance:
+
+- is entirely in the penitent's own hands,
+- may happen before formal punishment and may function as an early confession signal,
+- may happen after formal punishment as an additional sign of remorse,
+- does not replace the duty to name the misconduct clearly,
+- does not erase the record or formally alter the already imposed punishment,
+- and has mainly social effect on how the person is later perceived.
+
+The authority may treat voluntary penance as mitigating, but may not retroactively reclassify it into a formally imposed punishment. If the authority notices voluntary penance, it should normally give the penitent an opportunity to confess what was done.
+
+If there was in fact no real misconduct, the mere act of voluntary penance should not itself be punished. On the other hand, obviously theatrical or insincere pseudo-penance may itself be treated as a further offense.
+
 ### Fitness And Nutrition Domain
 
 The `Trainer` has at least:
